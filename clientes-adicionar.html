@@ -1,0 +1,29 @@
+<!--
+    A página 'clientes-adicionar' funciona como um formulário e insere os dados de nome, e-mail e telefone
+    Estes dados vão para a função ClienteFuncoes() com o parâmetro 'adicionar'
+-->
+<div id="ClientesAdicionar">
+    <span class="ClientesVoltar" onclick="AbreTela('clientes')">« VOLTAR</span>
+    <div class="ClientesAdicionarTopo">
+        <div class="ClientesAdicionarTopoImagem">&nbsp;</div>
+        <div class="ClientesAdicionarTopoLateral">
+            <span class="ClientesAdicionarTopoNome">Adicionar cliente</span>
+        </div>
+    </div>
+
+    <div class="ClientesForm">
+        <div class="ClientesFormDiv">
+            <span class="ClientesFormDivTitulo">NOME</span>
+            <input type="text" name="" id="cliente-adicionar-nome" class="ClientesFormDivInput" value="">
+        </div> 
+        <div class="ClientesFormDiv">
+            <span class="ClientesFormDivTitulo">E-MAIL</span>
+            <input type="text" name="" id="cliente-adicionar-email" class="ClientesFormDivInput" value="">
+        </div> 
+        <div class="ClientesFormDiv">
+            <span class="ClientesFormDivTitulo">TELEFONE</span>
+            <input type="text" name="" id="cliente-adicionar-telefone" class="ClientesFormDivInput" value="">
+        </div> 
+        <div class="ClientesFormButton" onclick="ClienteFuncoes('', 'adicionar')">SALVAR</div>
+    </div> 
+</div>

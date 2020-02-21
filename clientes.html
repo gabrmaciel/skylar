@@ -1,0 +1,20 @@
+<!--
+    A página clientes é inserida no contexto da div #App
+    Quando carregada, constroi a listagem através da função ConstruiPaginaCliente()
+-->
+<div id="Clientes">
+
+    <div class="ClientesAdicionarDiv">
+        <button class="ClientesAdicionar" onclick="AbreTela('clientes-adicionar')">ADICIONAR CLIENTE</button>
+    </div>
+
+    <div class="ClientesLista">
+    
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        ConstruiPaginaCliente();
+    });
+</script>

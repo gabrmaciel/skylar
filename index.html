@@ -1,0 +1,48 @@
+<!--
+    index.html é a página principal do site. 
+    A partir dela, o conteúdo das outras páginas é inserido através da função AbreTela().
+    Esta função está em scripts.js.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <title>Skylar</title>
+</head>
+<body>
+    <div id="Topo">
+        <img src="img/skylar.png" alt="" width="180">
+        <div class="TopoBorda">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1440 320">
+                <path fill="#000" fill-opacity="1" d="M0,320L120,309.3C240,299,480,277,720,272C960,267,1200,277,1320,282.7L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+            </svg>
+        </div>
+    </div>
+    
+    <div id="App">
+        <!-- Dentro da div App, as DIVs são inseridas através da função AbreTela() no JS -->
+    </div>
+</body>
+
+<script>
+    //Quando a tela inicial é carregada, o jQuery aciona a função $(document).ready
+    //Dentro desta função estão os dados que serão salvos no cookie
+    //Estes dados foram inseridos de forma arbitrária, simulando um pequeno banco
+    //A função AbreTela() se encarrega de iniciar a primeira página do site, "clientes"
+
+    $(document).ready(function(){
+        setCookie('clientes', "[Gabriel Maciel|gabriel.henrique.maciel@gmail.com|19971468663][Rafael Rodrigues|rafael.rodrigues@gmail.com|1934221100'][Paulo Mello|paulo.pecege@contato.com|12345678][Maria Luisa Maciel|maria.luisa@hotmail.com|12345678][Teste|teste@teste.com|12345678]", 1);
+        AbreTela("clientes");
+    });
+</script>
+</html>
+
+
