@@ -1,0 +1,25 @@
+<div id="Login">
+        <input type="text" placeholder="Login" id="login"><br>
+        <input type="password" placeholder="Senha" id="senha"><br>
+        <button onclick="Login()">ENTRAR</button>
+</div>
+
+<script>
+    
+
+    function Login(){
+        var login = $("#login").val();
+        var senha = $("#senha").val();
+
+        if(login == "admin" && senha == "123"){
+            setCookie('clientes', "[Gabriel Maciel|gabriel.henrique.maciel@gmail.com|19971468663][Rafael Rodrigues|rafael.rodrigues@gmail.com|1934221100'][Paulo Mello|paulo.pecege@contato.com|12345678][Maria Luisa Maciel|maria.luisa@hotmail.com|12345678][Teste|teste@teste.com|12345678]", 1);
+            AbreTela("clientes");
+
+            $("#login").removeClass('BordaErro');
+            $("#senha").removeClass('BordaErro');
+        }else{
+            $("#login").addClass('BordaErro');
+            $("#senha").addClass('BordaErro');
+        }
+    }
+</script>
